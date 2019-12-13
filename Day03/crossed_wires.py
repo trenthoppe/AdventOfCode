@@ -38,6 +38,7 @@ def tracePath(instructions):
             traceInstruction(path, 'x', distance, False)
         else:
             print("Direction not recognized")
+    # Origin doesn't count as an intersection so just remove it
     path.remove(((0,0),0))
     return path
 
